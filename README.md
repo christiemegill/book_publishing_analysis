@@ -27,22 +27,39 @@ cd publishing-analysis
 
 ## Project Structure
 publishing-analysis/
+
 │
+
 ├── data/
+
 │   ├── modern_english_books.csv
+
 │   ├── tableau_timeline.csv
+
 │   └── tableau_genres.csv
+
 │
+
 ├── notebooks/
+
 │   └── publishing_analysis.ipynb
+
 │
+
 ├── src/
+
 │   ├── data_cleaning.py
+
 │   └── analysis_utils.py
+
 │
+
 └── visualizations/
+│
     ├── decade_trends.png
+│ 
     ├── genre_evolution.png
+│
     └── top_genres.png
 
 ## Key Findings
@@ -50,21 +67,21 @@ publishing-analysis/
 
 * Identified three distinct growth periods:
 
-*  Pre-War Era (1900-1940): Modest growth rates of 10-15% per decade
-*  Post-War Expansion (1940-1990): Peak growth rates of 50-70% per decade
-*  Digital Revolution (1990-2022): Sustained high volumes with modified growth patterns
+  *  Pre-War Era (1900-1940): Modest growth rates of 10-15% per decade
+  *  Post-War Expansion (1940-1990): Peak growth rates of 50-70% per decade
+  *  Digital Revolution (1990-2022): Sustained high volumes with modified growth patterns
 
 * Genre Evolution
 
-*  Tracked the emergence and dominance of different genres across decades
-*  Revealed significant shifts in reader interests and market demands
-*  Identified the rise of Young Adult literature and consistent growth in Children's literature
+ * Tracked the emergence and dominance of different genres across decades
+ *  Revealed significant shifts in reader interests and market demands
+ *  Identified the rise of Young Adult literature and consistent growth in Children's literature
 
 * Historical Correlations
 
-*  Analyzed impact of major world events on publishing volumes
-*  Tracked influence of technological disruptions
-*  Documented industry resilience and adaptation patterns
+  * Analyzed impact of major world events on publishing volumes
+  * Tracked influence of technological disruptions
+  * Documented industry resilience and adaptation patterns
 
 ## Data Cleaning Methodology
 
@@ -77,10 +94,10 @@ publishing-analysis/
 
 * The project includes several key visualizations:
 
-*  Publication volume by decade (1900-2022)
-*  Genre dominance trends
-*  Top 10 most common genres
-*  Evolution of top 5 genres over time
+  *  Publication volume by decade (1900-2022)
+  *  Genre dominance trends
+  *  Top 10 most common genres
+  *  Evolution of top 5 genres over time
 
 ## Usage
 Example usage of core analysis functions
@@ -96,31 +113,31 @@ decade_genres = analyze_genre_dominance()
 
 * The project includes prepared datasets for Tableau visualization:
 
-*  tableau_timeline.csv: Decade-wise publication volumes
-*  tableau_genres.csv: Genre distribution across decades
+  tableau_timeline.csv: Decade-wise publication volumes
+  
+  tableau_genres.csv: Genre distribution across decades
 
 ## Future Development
 
 * Planned enhancements include:
 
-*  Regional variation analysis
-*  Format-specific growth rate analysis
-*  Price point evolution tracking
-*  Market concentration analysis
-*  Distribution channel impact assessment
+  *  Regional variation analysis
+  *  Format-specific growth rate analysis
+  *  Price point evolution tracking
+  *  Market concentration analysis
+  *  Distribution channel impact assessment
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
-* This project is licensed under the MIT License - see the LICENSE file for details.
+ This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
-* github.com/christiemegill/book_publishing_analysis
+ github.com/christiemegill/book_publishing_analysis
 
 ## Acknowledgments
-* Data source: Open Library API
-
+ Data source: Open Library API
 
 
 # Install required packages
