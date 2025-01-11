@@ -83,13 +83,13 @@ publishing-analysis/
 *  Evolution of top 5 genres over time
 
 ## Usage
-# Example usage of core analysis functions
+Example usage of core analysis functions
 from src.analysis_utils import analyze_publication_trends, analyze_genre_dominance
 
-# Analyze publication trends
+Analyze publication trends
 decade_counts = analyze_publication_trends()
 
-# Analyze genre dominance
+Analyze genre dominance
 decade_genres = analyze_genre_dominance()
 
 ## Tableau Integration
