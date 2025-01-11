@@ -1,8 +1,6 @@
 Publishing Industry Evolution Analysis (1900-2022)
-
 Overview
 This project analyzes the evolution of English-language book publishing over more than a century, from 1900 to 2022. Using Python, Jupyter, and data visualization techniques, it explores publishing volumes, genre trends, and historical correlations to provide insights into the industry's development and adaptation to technological changes.
-
 Key Features
 
 Comprehensive analysis of publishing volume trends across three major historical periods
@@ -117,7 +115,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 Your Name - your.email@example.com
 Project Link: https://github.com/christiemegill/book_publishing_analysis
-
 Acknowledgments
 
 Data source: Open Library API
