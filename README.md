@@ -88,7 +88,10 @@ publishing-analysis/
 * Implemented comprehensive genre mapping system
 * Standardized category names and hierarchies
 * Separated format designations from genre classifications
-* Handled overlapping categories (e.g., juvenile/children's fiction)
+* Handled overlapping categories (e.g., juvenile/children's fiction) : combined various children's literature categories into one consistent category, added more variations of children's literature terms, expanded the young adult and general fiction mappings
+* Added more format categories to exclude (abstracts, indexes) and implemented more robust handling of format exclusions
+* Better handling of different input types for subjects: more robust string cleaning with .strip()
+
 
 ## Visualizations
 
