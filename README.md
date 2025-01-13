@@ -1,97 +1,78 @@
 # Publishing Industry Evolution Analysis (1900-2022)
 ## Overview
-This project analyzes the evolution of English-language book publishing over more than a century, from 1900 to 2022. Using Python, Jupyter, and data visualization techniques, it explores publishing volumes, genre trends, and historical correlations to provide insights into the industry's development and adaptation to technological changes.
+This project analyzes the evolution of English-language book publishing from 1900 to 2022, focusing on five key research questions:
+
+How has the volume of book publishing changed across decades?
+Are there notable spikes or dips in publishing that correlate with historical events?
+What are the dominant trends in modern publishing?
+How has genre distribution changed in the 21st century?
+Are certain subjects/genres showing rapid growth or decline?
 
 ## Key Features
-* Comprehensive analysis of publishing volume trends across three major historical periods
-* Genre dominance analysis by decade
-* Interactive visualizations using Matplotlib
-* Data preparation for Tableau integration
-* Advanced data cleaning and standardization of genre categories
-* Statistical analysis of growth patterns and historical event correlations
+* Historical publishing volume analysis
+* Correlation analysis with major historical events
+* Genre trend analysis and evolution
+* Growth rate calculations by decade
+* Genre diversity measurements
+* Advanced genre categorization and cleaning
 
 ## Technologies Used
 * Python 3.x
 * pandas: Data manipulation and analysis
 * Matplotlib: Data visualization
+* seaborn: Enhanced visualizations
 * NumPy: Numerical computing
 * Tableau: Advanced visualization and interactive dashboards
-  
-## Installation
-
-# Clone the repository
-git clone https://github.com/yourusername/publishing-analysis.git
-
-# Navigate to project directory
-cd publishing-analysis
 
 ## Project Structure
-publishing-analysis/
-
-│
-
+book_publishing_analysis/
 ├── data/
-
 │   ├── modern_english_books.csv
-
-│   ├── tableau_timeline.csv
-
-│   └── tableau_genres.csv
-
-│
-
+│   └── historical_events.csv
 ├── notebooks/
+│   └── publishing_evolution_analysis.ipynb
+└── README.md
 
-│   └── publishing_analysis.ipynb
-
-│
-
-├── src/
-
-│   ├── data_cleaning.py
-
-│   └── analysis_utils.py
-
-│
-
-└── visualizations/
-│
-    ├── decade_trends.png
-│ 
-    ├── genre_evolution.png
-│
-    └── top_genres.png
-
-## Key Findings
-* Publishing Volume Analysis
-
-* Identified three distinct growth periods:
-
-  *  Pre-War Era (1900-1940): Modest growth rates of 10-15% per decade
-  *  Post-War Expansion (1940-1990): Peak growth rates of 50-70% per decade
-  *  Digital Revolution (1990-2022): Sustained high volumes with modified growth patterns
-
-* Genre Evolution
-
- * Tracked the emergence and dominance of different genres across decades
- *  Revealed significant shifts in reader interests and market demands
- *  Identified the rise of Young Adult literature and consistent growth in Children's literature
-
-* Historical Correlations
-
-  * Analyzed impact of major world events on publishing volumes
-  * Tracked influence of technological disruptions
-  * Documented industry resilience and adaptation patterns
 
 ## Data Cleaning Methodology
 
+* Standardized publication years (1900-2022)
 * Implemented comprehensive genre mapping system
-* Standardized category names and hierarchies
-* Separated format designations from genre classifications
-* Handled overlapping categories (e.g., juvenile/children's fiction) : combined various children's literature categories into one consistent category, added more variations of children's literature terms, expanded the young adult and general fiction mappings
-* Added more format categories to exclude (abstracts, indexes) and implemented more robust handling of format exclusions
-* Better handling of different input types for subjects: more robust string cleaning with .strip()
+* Consolidated children's literature categories
+* Removed format-based categories (e.g., congresses, proceedings)
+* Enhanced genre cleaning with custom mapping
 
+## Analysis Methods
+* analyze_publishing_volume(): Decade-by-decade publication trends
+* analyze_historical_events_impact(): Correlation with major events
+* analyze_genre_trends(): Modern genre distribution analysis
+* analyze_growth_rates(): Decade-over-decade growth calculation
+* analyze_genre_diversity(): Genre variety analysis
+* analyze_filtered_genre_evolution(): Filtered genre trend analysis
+
+## Key Findings
+
+* Publishing Volume Trends
+
+    * Tracked volume changes across decades
+    * Identified growth patterns and significant shifts
+    * Visualized decade-by-decade comparisons
+
+* Historical Event Correlations
+
+* Analyzed impact of major events:
+
+    * World Wars
+    * Great Depression
+    * 9/11
+    * 2008 Financial Crisis
+    * COVID-19
+
+* Genre Evolution
+
+    * Tracked emergence and decline of genres
+    * Identified dominant categories
+    * Analyzed genre diversity trends
 
 ## Visualizations
 
@@ -103,14 +84,13 @@ publishing-analysis/
   *  Evolution of top 5 genres over time
 
 ## Usage
-Example usage of core analysis functions
-from src.analysis_utils import analyze_publication_trends, analyze_genre_dominance
+* analyzer = LibraryDataAnalyzer('../data/modern_english_books.csv')
 
-Analyze publication trends
-decade_counts = analyze_publication_trends()
+* volume_trends = analyzer.analyze_publishing_volume()
 
-Analyze genre dominance
-decade_genres = analyze_genre_dominance()
+* historical_analysis = analyzer.analyze_historical_events_impact()
+
+* genre_trends = analyzer.analyze_genre_trends()
 
 ## Tableau Integration
 
@@ -124,11 +104,11 @@ decade_genres = analyze_genre_dominance()
 
 * Planned enhancements include:
 
-  *  Regional variation analysis
-  *  Format-specific growth rate analysis
-  *  Price point evolution tracking
-  *  Market concentration analysis
-  *  Distribution channel impact assessment
+  * Regional analysis expansion
+  * Additional historical event correlation
+  * Enhanced genre categorization
+  * Temporal pattern analysis
+  * Market segment analysis
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
